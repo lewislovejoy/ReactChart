@@ -18,5 +18,6 @@
   "homepage": "https://github.com/lewislovejoy/ReactChart#readme",
   "publishConfig": {
     "@lewislovejoy:registry": "https://npm.pkg.github.com"
-  }
+  },
+
 }
