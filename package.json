@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lewislovejoy/ReactChart/issues"
   },
-  "homepage": "https://github.com/lewislovejoy/ReactChart#readme"
+  "homepage": "https://github.com/lewislovejoy/ReactChart#readme",
+  "publishConfig": {
+    "@lewislovejoy:registry": "https://npm.pkg.github.com"
+  }
 }
