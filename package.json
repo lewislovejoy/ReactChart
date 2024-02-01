@@ -18,5 +18,9 @@
   "homepage": "https://github.com/lewislovejoy/ReactChart#readme",
   "publishConfig": {
     "@lewislovejoy:registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "dayjs": "1.11.10",
+    "@alesmenzel/number-format": "3.1.3"
   }
 }
