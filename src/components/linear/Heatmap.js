@@ -1,4 +1,4 @@
-import { getPlotter, rgbToHex } from './utils';
+import { getPlotter, rgbToHex } from '../../utils/ChartUtils';
 
 class Heatmap {
   constructor(d, patternX, patternY, patternVal, otherProps) {

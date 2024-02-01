@@ -42,17 +42,6 @@ export const COLOR_SCHEMES = {
   pastel: ['#fbb4ae', '#b3cde3', '#ccebc5', '#decbe4', '#fed9a6', '#ffffcc', '#e5d8bd', '#fddaec', '#f2f2f2', '#fdcdac']
 };
 
-export const getColor = (dColor, defaultColor, colorScheme, index) => {
-  if (dColor) {
-    return dColor;
-  }
-  const cs = COLOR_SCHEMES[colorScheme];
-  if (colorScheme && cs) {
-    return cs[index % cs.length];
-  }
-  return defaultColor;
-};
-
 export function getValidDateOrString(str) {
   let dateVal = dayjs(str, null, true);
   if (dateVal.isValid()) {
@@ -93,12 +82,13 @@ export const getPlotter = (plotters, pat) => {
 
 export const animateFC = (fc, val) => (val / 50) * fc;
 
-export const getColor = (color) => {
-  if (color === 'default') {
-    return {
-      from: 'color',
-      modifiers: [['darker', 0.3]]
-    };
+export const getColor = (dColor, defaultColor, colorScheme, index) => {
+  if (dColor) {
+    return dColor;
   }
-  return color;
+  const cs = COLOR_SCHEMES[colorScheme];
+  if (colorScheme && cs) {
+    return cs[index % cs.length];
+  }
+  return defaultColor;
 };

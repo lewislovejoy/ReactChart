@@ -1,6 +1,5 @@
 import StringFormater from '../../utils/StringFormater';
-import { rgbToHex } from './utils';
-
+import { rgbToHex } from '../../utils/ChartUtils';
 class Gauge {
   constructor(d, patternX, min, max, otherProps) {
     this.d = d;
